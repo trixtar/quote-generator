@@ -1,0 +1,51 @@
+main {
+	background-color: #306754;
+}
+
+.screen-center {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#quote-box {
+	max-width: 60%;
+	max-height: 80%;
+	min-width: 30%; 
+}
+
+.quote-text {
+	/*max-height: 70px; */
+	color:  #306754;
+	text-overflow: ellipsis;
+}
+
+.quote-text i {
+	font-size: 2em;
+	margin-right: 0.3em;
+}
+
+#quote {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.quote-author {
+	padding: 15px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer {
+	display: block;
+	max-width: 30%;
+	color: white;
+}
