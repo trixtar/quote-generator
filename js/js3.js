@@ -40,7 +40,7 @@ function newQuote(){
 			chunk += quote.text + '</span></div><div class="quote-author text-right"><span id="author" class="author">';
 			chunk += quote.author + '</span></div>';
 
-			$('#fullquote').append(chunk);
+			$('#fullquote').html(chunk);
 			
 			var col = getRandomInt(0,colors.length);
 			$('main').css('backgroundColor', colors[col]);
