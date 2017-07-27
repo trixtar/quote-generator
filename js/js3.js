@@ -34,10 +34,14 @@ function newQuote(){
 			} else {
 				quote.author = ' - Unknown';
 			}
-			
-			$('#quote').text(quote.text);
-			$('#author').text(quote.author);
 
+			var chunk = '';
+			chunk += '<div class="quote-text"><i class="fa fa-quote-left"></i><span id="quote" class="quote">';
+			chunk += quote.text + '</span></div><div class="quote-author text-right"><span id="author" class="author">';
+			chunk += quote.author + '</span></div>';
+
+			$('#fullquote').append(chunk);
+			
 			var col = getRandomInt(0,colors.length);
 			$('main').css('backgroundColor', colors[col]);
 			$('.quote-text').css('color', colors[col]);
